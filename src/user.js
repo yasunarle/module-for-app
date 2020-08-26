@@ -1,4 +1,6 @@
 function useState() {
+  console.log("useState func 実行...")
+
   let user = null
 
   function setUser(user) {
