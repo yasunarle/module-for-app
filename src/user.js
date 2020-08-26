@@ -1,12 +1,15 @@
+let user = null
 function useState() {
   console.log("useState func 実行...")
 
-  let user = null
-
-  function setUser(user) {
-    user = user
+  function setUser() {
+    // user = user
   }
-  return setUser
+
+  function login() {
+    user = { name: "yasunari" }
+  }
+  return { setUser, login }
 }
 
 export { useState }

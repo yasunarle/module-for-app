@@ -10,4 +10,7 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "main.js",
   },
+  devServer: {
+    contentBase: outputPath,
+  },
 }

@@ -20,3 +20,5 @@ npx webpack --config webpack.config.js
 ```
 node dist/main.js
 ```
+
+### local server ( npm )
