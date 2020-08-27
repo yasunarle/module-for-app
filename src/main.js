@@ -1,6 +1,12 @@
-import { useState } from "./user"
+import "./plugins/firebase"
+import "./test"
+// Plugins
+import { useFirebase } from "./plugins/firebase"
 
-const user = useState()
-console.log(user)
+const { getUser } = useFirebase()
 
-const app = document.getElementById("app")
+// --- 実行テスト ---
+console.log("--- main.js: ", getUser())
+
+// --- メモ ---
+// const app = document.getElementById("app")
